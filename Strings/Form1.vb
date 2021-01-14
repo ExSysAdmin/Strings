@@ -303,4 +303,9 @@
             SaveAsToolStripMenuItem.Enabled = True
         End If
     End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        Dim AboutForm As AboutBox1 = New AboutBox1()
+        AboutForm.ShowDialog()
+    End Sub
 End Class
